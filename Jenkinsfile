@@ -9,7 +9,7 @@ pipeline {
             stage('Pull to Folder') {
                   steps {
                         sh 'mkdir -p folder'
-                        sh 'cp -r * folder'
+                        sh 'cp -r README.md folder'
                   }
             }
       }
