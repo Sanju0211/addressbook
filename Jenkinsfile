@@ -8,8 +8,7 @@ pipeline {
             }
             stage('Pull to Folder') {
                   steps {
-                        sh 'mkdir -p folder'
-                        sh 'cp -r * folder'
+                        sh 'git pull origin develop /c/users/lenovo/ProjectY/addressbook/folder'
                   }
             }
       }
